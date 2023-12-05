@@ -1,0 +1,158 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c", 'Gabarito', 'Nunito Sans', 'Poppins', 'Ubuntu', 'sans-serif';
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.active {
+    background: linear-gradient(90deg, #f28e27 0%, #f58331 50%, #fd644f 100%);
+    padding: 3px 25px;
+    border-radius: 25px;
+    color: white;
+}
+
+/* Estilos para a seção principal */
+main {
+    padding: 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2 {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+button {
+    background: linear-gradient(90deg, #f28e27 0%, #f58331 50%, #fd644f 100%);
+    padding: 9px 25px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* Efeito de hover para links */
+/*#menu ul li {
+    position: relative;
+}
+
+#menu ul li a::before {
+    content: '';
+    width: 0;
+    position: absolute;
+    border-bottom: 8px solid salmon;
+    bottom: 0;
+    left: 0;
+    transition: 0.7s width;  /// A transição deve ser apenas para a largura 
+}
+
+#menu ul li a:hover::before {
+    width: 100%; -- Aumenta a largura para que a linha apareça 
+}
+ */
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand-name {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .col-2 {
+        flex: 1 1 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
